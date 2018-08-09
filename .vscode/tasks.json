@@ -1,0 +1,14 @@
+{
+    "version": "2.0.0",
+    "tasks": [{
+            "label": "ts-node",
+            "type": "shell",
+            "command": "npm run ts-node ${relativeFile}"
+        },
+        {
+            "label": "mocha",
+            "type": "shell",
+            "command": "npm-run mocha -r espower-typescript/guess ${relativeFile}"
+        }
+    ]
+}

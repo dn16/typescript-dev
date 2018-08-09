@@ -1,0 +1,29 @@
+{
+  "log4js": {
+      "appenders": {
+          "out": {
+              "type": "stdout"
+          },
+          "error": {
+              "type": "dateFile",
+              "filename": "logs/error.log",
+              "daysToKeep": 31
+          }
+      },
+      "categories": {
+          "default": {
+              "appenders": [
+                  "error"
+              ],
+              "level": "INFO"
+          },
+          "console": {
+              "appenders": [
+                  "out",
+                  "error"
+              ],
+              "level": "INFO"
+          }
+      }
+  }
+}

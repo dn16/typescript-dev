@@ -1,0 +1,27 @@
+{
+  "commands": [
+    {
+      "command": "commands.refresh",
+      "text": "$(sync)",
+      "color": "#FFCC00"
+    },
+    {
+      "command": "workbench.action.tasks.runTask",
+      "arguments": ["ts-node"],
+      "text": "$(triangle-right) ts-node",
+      "color": "#CCFFCC",
+      "filterFileRegex": "\\.ts"
+    },
+    {
+      "command": "workbench.action.tasks.runTask",
+      "arguments": ["mocha"],
+      "text": "$(octoface) mocha",
+      "color": "#EEBBAA",
+      "filterFileRegex": "\\.ts"
+    },
+    {
+      "command": "workbench.action.terminal.toggleTerminal",
+      "text": "$(terminal)"
+    }
+  ]
+}
